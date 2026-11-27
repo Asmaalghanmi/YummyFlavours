@@ -1,0 +1,90 @@
+.edit-page {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+}
+
+.form-box h1 {
+    margin-bottom: 5px;
+}
+
+.form-box p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: gray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background: var(--teal);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    color: gray;
+}
+
+.profile-notification {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 280px;
+    max-width: 420px;
+    padding: 14px 24px;
+    border-radius: 14px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    z-index: 99999;
+    display: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.profile-notification.show {
+    display: block;
+}
+
+.profile-notification.success {
+    background-color: #009688;
+}
+
+.profile-notification.error {
+    background-color: #e74c3c;
+}

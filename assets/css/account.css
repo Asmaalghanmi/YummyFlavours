@@ -1,0 +1,266 @@
+.account-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px 60px;
+}
+
+/* PROFILE BOX */
+.profile-box {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    background: #ffffff;
+    padding: 28px 34px;
+    border-radius: 26px;
+    margin: 25px auto 42px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    min-height: 180px;
+    position: relative;
+}
+
+.profile-avatar {
+    width: 105px;
+    height: 105px;
+    background: var(--teal);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 38px;
+    font-weight: 700;
+    flex-shrink: 0;
+    box-shadow: 0 6px 16px rgba(0, 150, 136, 0.25);
+}
+
+.profile-info {
+    flex: 1;
+    text-align: left;
+    padding-right: 280px;
+}
+
+.profile-info h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.user-handle {
+    font-size: 17px;
+    color: var(--teal);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.user-bio {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.profile-actions {
+    position: absolute;
+    right: 34px;
+    bottom: 28px;
+    display: flex;
+    gap: 14px;
+}
+
+.profile-actions .btn {
+    border: 2px solid var(--teal);
+    padding: 11px 24px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: var(--teal);
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s ease;
+    background: white;
+}
+
+.profile-actions .btn:hover {
+    background: var(--teal);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.profile-actions .logout {
+    border-color: var(--teal);
+    color: var(--teal);
+}
+
+/* FAVORITES HEADER */
+.fav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 0 6px;
+}
+
+.fav-header h2 {
+    font-size: 32px;
+    color: #000;
+}
+
+.fav-header a {
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* GRID */
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 24px;
+    justify-content: start;
+    align-items: stretch;
+}
+
+/* RECIPE CARD */
+.small-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 18px;
+    width: 300px;
+    height: 390px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.small-card:hover {
+    transform: translateY(-5px);
+}
+
+.small-card h3 {
+    font-size: 20px;
+    line-height: 1.35;
+    margin-bottom: 14px;
+    height: 58px;
+    overflow: hidden;
+}
+
+.small-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 18px;
+}
+
+.small-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff8243;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    transition: 0.3s;
+    margin-top: auto;
+}
+
+.small-btn:hover {
+    background: var(--yellow);
+    color: black;
+}
+
+.small-btn i {
+    font-size: 16px;
+}
+
+.recipe-content h3 {
+    font-size: 22px;
+    line-height: 1.35;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+/* DISCOVER BOX */
+.discover-box {
+    width: 300px;
+    height: 390px;
+    border: 2px dashed #cfcfcf;
+    border-radius: 22px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.discover-box:hover {
+    border-color: var(--teal);
+    background: #fcfcfc;
+}
+
+.discover-box i {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.discover-box p {
+    font-size: 18px;
+    color: #000;
+}
+
+.profile-notification {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 280px;
+    max-width: 420px;
+    padding: 14px 24px;
+    border-radius: 14px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    z-index: 99999;
+    display: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.profile-notification.show {
+    display: block;
+}
+
+.profile-notification.success {
+    background-color: #009688;
+}
+
+.profile-notification.error {
+    background-color: #e74c3c;
+}
+
+@media (max-width: 1050px) {
+    .recipes-grid {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media (max-width: 700px) {
+    .recipes-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
