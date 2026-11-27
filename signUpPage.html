@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up - Yummy Flavors</title>
+
+
+
+    <!-- FONT -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <link rel="stylesheet" href="../assets/css/signup.css">
+
+</head>
+
+<body>
+
+
+
+<main class="signup-page">
+
+
+
+    <div class="signup-container">
+
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="signup-left">
+
+            <h1>Whip up <br> Something New.</h1>
+
+            <p>Join the community, discover recipes, and start cooking delicious meals.</p>
+
+            <div class="line"></div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="signup-right">
+
+
+
+            <div class="signup-header">
+
+                <h2>Join the Kitchen</h2>
+
+                <p>Create your chef account today.</p>
+
+            </div>
+
+
+
+            <form id="signupForm" class="signup-form">
+
+    <div class="input-row" style="display: flex; gap: 10px;">
+        <div class="input-group">
+            <label>First Name</label>
+            <input type="text" id="fname" placeholder="First Name" required>
+        </div>
+        <div class="input-group">
+            <label>Last Name</label>
+            <input type="text" id="lname" placeholder="Last Name" required>
+        </div>
+    </div>
+
+    <div class="input-group">
+        <label>Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+    </div>
+
+    <div class="input-group">
+        <label>Gender</label>
+        <select id="gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </div>
+
+    <!-- Replace the old User Type dropdown with this -->
+<div class="input-group">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" placeholder="Choose a display name" required>
+</div>
+
+    <div class="input-group">
+        <label>Password</label>
+        <input type="password" id="password" required>
+    </div>
+
+    <button type="submit" class="signup-btn">
+        Start Cooking!
+    </button>
+
+</form>
+
+
+
+            <div class="login-link">
+
+                <p>Already a member?</p>
+
+                <a href="logInPage.html">Log In</a>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</main>
+
+
+
+ <script src="../assets/js/auth.js"></script>
+ <script src="../assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>

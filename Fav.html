@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yummy Flavors</title>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/fav.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="top-header">
+        <div class="logo">
+            <a href="../home.html">
+                <img src="../assets/img/logo.png" alt="Yummy Flavors logo">
+            </a>
+        </div>
+
+        <div class="actions">
+            <a href="../recipes/Rpages/search.html"><i class="bi bi-search"></i></a>
+            <a href="Fav.html"><i class="bi bi-heart"></i></a>
+            <a href="account.html"><i class="bi bi-person"></i></a>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <a href="../home.html">Home</a>
+
+        <div class="dropdown">
+            <a href="../recipes/Rpages/recipes.html">Recipes <i class="bi bi-chevron-down"></i></a>
+            <div class="dropdown-menu">
+                <a href="../recipes/breakfast/breakfast.html">Breakfast</a>
+                <a href="../recipes/lunch/lunch.html">Lunch</a>
+                <a href="../recipes/dinner/dinner.html">Dinner</a>
+                <a href="../recipes/desserts/desserts.html">Desserts</a>
+                <a href="../recipes/snacks/snacks.html">Snacks</a>
+                <a href="../recipes/drinks/drinks.html">Drinks</a>
+            </div>
+        </div>
+
+        <a href="../index.html">Start Here</a>
+        <a href="../about.html">About Us</a>
+        <a href="../contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<main class="fav-main">
+
+    <div class="fav-head">
+        <h1>❤️ MY FAVORITES</h1>
+        <p>All your hand-picked delicious recipes in one place!</p>
+    </div>
+
+    <div class="fav-filters">
+        <button class="filter-btn active">All Recipes</button>
+        <button class="filter-btn">Breakfast</button>
+        <button class="filter-btn">Lunch</button>
+        <button class="filter-btn">Dinner</button>
+        <button class="filter-btn">Desserts</button>
+        <button class="filter-btn">Snacks</button>
+        <button class="filter-btn">Drinks</button>
+    </div>
+
+    <!-- Inside Fav.html -->
+<div class="fav-cards" id="favoritesContainer">
+    <!-- JS will inject cards here. You can delete the hardcoded ones now! -->
+</div>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Yummy Flavors. All rights reserved.</p>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/favorites.js"></script>
+</body>
+</html>
